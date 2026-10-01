@@ -36,7 +36,7 @@ async function save_playlist(playlistName) {
 // create playlist 
 async function createPlaylists(startIndex, endIndex = 0, playlistSize = 100, playlistNamePrefix = "siiva ") {
     var nd = new Date();
-    playlistNamePrefix += nd.getDate() + "/" + nd.getMonth()+1 + " "
+    playlistNamePrefix += nd.getDate() + "/" + (nd.getMonth()+1) + " "
 
     var loopIndex = 1
     var hoverEvent = new MouseEvent('mouseover');
